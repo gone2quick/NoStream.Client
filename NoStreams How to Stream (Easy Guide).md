@@ -21,9 +21,9 @@ Treat the key like a password. Anyone who has it can stream as you.
 
 ## 3. Start streaming
 
-1. Put `PCStream-Client.py` in its own folder, for example `C:\NoStreams`.
+1. Put `NoStream-Client.py` in its own folder, for example `C:\NoStreams`.
 2. Open Command Prompt **in that folder**: open the folder in File Explorer, click the address bar, type `cmd` and press Enter.
-3. Run: `python PCStream-Client.py`
+3. Run: `python NoStream-Client.py`
 4. Answer the three questions:
    - **Stream key:** paste it and press Enter. Nothing shows as you type; that is on purpose, so it never appears on your stream.
    - **Stream name:** type a title, or press Enter to skip.
@@ -40,7 +40,7 @@ Open Notepad, paste the three lines below, and save the file as `Start NoStreams
 ```
 @echo off
 cd /d "%~dp0"
-python PCStream-Client.py
+python NoStream-Client.py
 pause
 ```
 
@@ -50,7 +50,7 @@ To skip pasting the key every time, run `setx PCSTREAM_KEY your-key-here` once i
 
 ## 5. Common options
 
-Add these after the command, for example `python PCStream-Client.py --audio both --height 1080`.
+Add these after the command, for example `python NoStream-Client.py --audio both --height 1080`.
 
 | Option | What it does |
 | --- | --- |
