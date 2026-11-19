@@ -13,7 +13,7 @@ Do this once per PC (Windows).
 
 ## 2. Get your stream key
 
-1. Open <https://server.tail1be5a7.ts.net> in your browser.
+1. Open <https://nostreams.tail1be5a7.ts.net> in your browser.
 2. Sign up for an account.
 3. Copy your **stream key**. You can sign in later to see it again or generate a new one.
 
@@ -29,7 +29,7 @@ Treat the key like a password. Anyone who has it can stream as you.
    - **Stream name:** type a title, or press Enter to skip.
    - **Viewer delay:** press Enter for 0 (as live as possible), or type a number of seconds up to 300.
 5. Wait for this line: `[ok] ffmpeg is producing video segments - the stream is live.`
-6. Open the address it prints to watch. Your own page is `https://server.tail1be5a7.ts.net/<your username>/`.
+6. Open the address it prints to watch. Your own page is `https://nostreams.tail1be5a7.ts.net/<your username>/`.
 
 **To stop:** press **Ctrl+C** once and wait for `Stream ended`. It finishes uploading and the server saves a recording. Closing the window instead can lose the end of your stream.
 
