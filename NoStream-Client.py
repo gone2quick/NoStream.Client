@@ -36,7 +36,7 @@ Sending to a shared server (so other people can stream to it):
             (Ctrl+C ends the stream)
 Nothing is captured-and-served locally in that mode: ffmpeg runs on the streamer's PC, the HLS segments are
 uploaded to the server, and the server shows them on its browse page and records them. PCStream_client.py is
-this same script with --push turned on by default (pointing at server.tail1be5a7.ts.net).
+this same script with --push turned on by default (pointing at nostreams.tail1be5a7.ts.net).
 
 Server mode (no capturing, just the website):
   python stream_to_phone.py --server
@@ -114,7 +114,7 @@ def _enable_text_color(code):
 
 _enable_text_color(TEXT_COLOR)
 
-DEFAULT_PUSH_URL = "https://server.tail1be5a7.ts.net"  # what a bare  --push  sends to
+DEFAULT_PUSH_URL = "https://nostreams.tail1be5a7.ts.net"  # what a bare  --push  sends to
 PUSH_DEFAULT = DEFAULT_PUSH_URL  # pushing is on by default in this client build
 
 PLAYER_HTML = r"""<!doctype html>
