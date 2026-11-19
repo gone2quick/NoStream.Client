@@ -10,7 +10,7 @@ echo   makes a launcher, then deletes this installer.
 echo ==================================================
 echo.
 
-if not exist "PCStream-Client.py" goto :noclient
+if not exist "NoStream-Client.py" goto :noclient
 where winget >nul 2>nul
 if errorlevel 1 goto :nowinget
 
@@ -51,8 +51,8 @@ rem ---------- 4. Launcher ----------
 echo [4/4] Creating the launcher ...
 > "Start NoStreams.bat" echo @echo off
 >> "Start NoStreams.bat" echo cd /d "%%~dp0"
->> "Start NoStreams.bat" echo python PCStream-Client.py
->> "Start NoStreams.bat" echo if errorlevel 9009 py -3 PCStream-Client.py
+>> "Start NoStreams.bat" echo python NoStream-Client.py
+>> "Start NoStreams.bat" echo if errorlevel 9009 py -3 NoStream-Client.py
 >> "Start NoStreams.bat" echo pause
 
 echo.
@@ -69,7 +69,7 @@ rem Delete this installer. The "goto" trick lets a batch file remove itself.
 exit /b 0
 
 :noclient
-echo Could not find PCStream-Client.py next to this installer.
+echo Could not find NoStream-Client.py next to this installer.
 echo Put both files in the same folder and run this again.
 pause
 exit /b 1
